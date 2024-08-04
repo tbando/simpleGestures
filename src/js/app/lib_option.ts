@@ -247,7 +247,7 @@ class LibOption {
    * @return {boolean}
    */
   isCommandTextOn(): boolean {
-    return this.getParam('command_text_on', true);
+    return this.getParam('command_text_on', false);
   }
 
   /**
@@ -256,7 +256,7 @@ class LibOption {
    * @return {boolean}
    */
   isActionTextOn(): boolean {
-    return this.getParam('action_text_on', true);
+    return this.getParam('action_text_on', false);
   }
 
   /**
