@@ -6,6 +6,8 @@ import actionCloseLeftTab from './Action/close_left_tab';
 import actionCloseLeftTabWithoutPinned from './Action/close_left_tab_without_pinned';
 import actionCloseRightTab from './Action/close_right_tab';
 import actionCloseRightTabWithoutPinned from './Action/close_right_tab_without_pinned';
+import actionMoveCurrentTabToFirst from './Action/move_current_tab_to_first';
+import actionMoveCurrentTabToLast from './Action/move_current_tab_to_last';
 import actionNextTab from './Action/next_tab';
 import actionOpenExtensionPage from './Action/open_extension_page';
 import actionOpenNewTab from './Action/open_new_tab';
@@ -30,6 +32,8 @@ const gestureFunction: { [key: string]: (GestureOptions?) => void|Promise<void> 
   'close_right_tab_without_pinned': actionCloseRightTabWithoutPinned,
   'close_tab': actionCloseActiveTab,
   'last_tab': actionRestoreLastTab,
+  'move_current_tab_to_first': actionMoveCurrentTabToFirst,
+  'move_current_tab_to_last': actionMoveCurrentTabToLast,
   'new_tab': actionOpenNewTab,
   'new_tab_background': actionOpenNewTabBackGround,
   'next_tab': actionNextTab,

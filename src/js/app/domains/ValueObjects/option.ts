@@ -10,23 +10,25 @@ class Option {
   public readonly actionTextOn: boolean;
   public readonly trailOn: boolean;
 
-  public readonly gestureCloseTab: string;
   public readonly gestureNewTab: string;
   public readonly gestureNewTabBackground: string;
   public readonly gesturePinTab: string;
   public readonly gestureReload: string;
+  public readonly gestureReloadAll: string;
   public readonly gestureForward: string;
   public readonly gestureBack: string;
   public readonly gestureScrollTop: string;
   public readonly gestureScrollBottom: string;
-  public readonly gestureLastTab: string;
-  public readonly gestureReloadAll: string;
   public readonly gestureNextTab: string;
   public readonly gesturePrevTab: string;
-  public readonly gestureCloseRightTabWithoutPinned: string;
-  public readonly gestureCloseRightTab: string;
+  public readonly gestureLastTab: string;
+  public readonly gestureCloseTab: string;
+  public readonly gestureMoveCurrentTabToFirst: string;
+  public readonly gestureMoveCurrentTabToLast: string;
   public readonly gestureCloseLeftTabWithoutPinned: string;
+  public readonly gestureCloseRightTabWithoutPinned: string;
   public readonly gestureCloseLeftTab: string;
+  public readonly gestureCloseRightTab: string;
   public readonly gestureCloseAllBackground: string;
   public readonly gestureCloseAll: string;
   public readonly gestureOpenOption: string;
@@ -59,6 +61,8 @@ class Option {
     this.gesturePrevTab = value.gesture_prev_tab ?? 'DL';
     this.gestureLastTab = value.gesture_last_tab ?? '';
     this.gestureCloseTab = value.gesture_close_tab ?? 'DU';
+    this.gestureMoveCurrentTabToFirst = value.gesture_move_current_tab_to_first ?? 'LUL';
+    this.gestureMoveCurrentTabToLast = value.gesture_move_current_tab_to_last ?? 'RUR';
     this.gestureCloseLeftTabWithoutPinned = value.gesture_close_left_tab_without_pinned ?? '';
     this.gestureCloseRightTabWithoutPinned = value.gesture_close_right_tab_without_pinned ?? '';
     this.gestureCloseLeftTab = value.gesture_close_left_tab ?? 'LDL';
@@ -89,6 +93,8 @@ class Option {
       gesture_close_tab: this.gestureCloseTab,
       gesture_forward: this.gestureForward,
       gesture_last_tab: this.gestureLastTab,
+      gesture_move_current_tab_to_first: this.gestureMoveCurrentTabToFirst,
+      gesture_move_current_tab_to_last: this.gestureMoveCurrentTabToLast,
       gesture_new_tab: this.gestureNewTab,
       gesture_new_tab_background: this.gestureNewTabBackground,
       gesture_next_tab: this.gestureNextTab,

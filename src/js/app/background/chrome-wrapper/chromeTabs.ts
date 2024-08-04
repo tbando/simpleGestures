@@ -21,6 +21,14 @@ export const chromeTabs = {
       chrome.tabs.remove(tab.id);
     }
   },
+  move(tab: Tab|Tab[], pos: number): void {
+    if (Array.isArray(tab)) {
+      const moveTabIds: number[] = tab.map((tab) => tab.id);
+      chrome.tabs.move(moveTabIds, {index: pos});
+    } else {
+      chrome.tabs.move(tab.id, {index: pos});
+    }
+  },
   async createActiveRight(url: null|string = null, active = true) {
     const activeTab: Tab = await chromeTabs.getActiveTab();
     const indexOfAppendingTab: number = activeTab.index + 1;
