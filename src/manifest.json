@@ -26,7 +26,8 @@
         "<all_urls>"
       ],
       "css": [
-        "font/flaticon.css"
+        "font/flaticon.css",
+        "css/style.css"
       ],
       "js": [
         "handler.js"
