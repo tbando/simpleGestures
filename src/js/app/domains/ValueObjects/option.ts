@@ -10,23 +10,23 @@ class Option {
   public readonly actionTextOn: boolean;
   public readonly trailOn: boolean;
 
-  public readonly gestureCloseTab: string;
   public readonly gestureNewTab: string;
   public readonly gestureNewTabBackground: string;
   public readonly gesturePinTab: string;
   public readonly gestureReload: string;
+  public readonly gestureReloadAll: string;
   public readonly gestureForward: string;
   public readonly gestureBack: string;
   public readonly gestureScrollTop: string;
   public readonly gestureScrollBottom: string;
-  public readonly gestureLastTab: string;
-  public readonly gestureReloadAll: string;
   public readonly gestureNextTab: string;
   public readonly gesturePrevTab: string;
-  public readonly gestureCloseRightTabWithoutPinned: string;
-  public readonly gestureCloseRightTab: string;
+  public readonly gestureLastTab: string;
+  public readonly gestureCloseTab: string;
   public readonly gestureCloseLeftTabWithoutPinned: string;
+  public readonly gestureCloseRightTabWithoutPinned: string;
   public readonly gestureCloseLeftTab: string;
+  public readonly gestureCloseRightTab: string;
   public readonly gestureCloseAllBackground: string;
   public readonly gestureCloseAll: string;
   public readonly gestureOpenOption: string;
