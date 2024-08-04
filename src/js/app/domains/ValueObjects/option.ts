@@ -43,7 +43,7 @@ class Option {
     this.enabled = value.enabled ?? true;
     this.language = value.language ?? 'Japanese';
     this.colorCode = value.color_code ?? '#7F99CC';
-    this.lineWidth = value.line_width ?? 3;
+    this.lineWidth = value.line_width ?? 4;
     this.commandTextOn = value.command_text_on ?? false;
     this.actionTextOn = value.action_text_on ?? false;
     this.trailOn = value.trail_on ?? true;
