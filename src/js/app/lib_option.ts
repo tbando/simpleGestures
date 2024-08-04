@@ -230,7 +230,7 @@ class LibOption {
    * @return {string}
    */
   getColorCode(): string {
-    return this.getParam('color_code', '#FF0000');
+    return this.getParam('color_code', '#7F99CC');
   }
 
   /**
