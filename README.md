@@ -1,4 +1,4 @@
-![logo](src/img/icon_512.png)
+![logo](src/img/icon_256.png)
 
 ### Overview (概要)
 
