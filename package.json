@@ -17,14 +17,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/RyutaKojima/simpleGestures.git"
+    "url": "git+https://github.com/tbando/simpleGestures.git"
   },
-  "author": "r-kojima",
+  "author": "tbando",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/RyutaKojima/simpleGestures/issues"
+    "url": "https://github.com/tbando/simpleGestures/issues"
   },
-  "homepage": "https://github.com/RyutaKojima/simpleGestures#readme",
+  "homepage": "https://github.com/tbando/simpleGestures#readme",
   "devDependencies": {
     "@types/chrome": "0.0.269",
     "@typescript-eslint/eslint-plugin": "5.62.0",
