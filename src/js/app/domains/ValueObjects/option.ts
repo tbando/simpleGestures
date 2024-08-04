@@ -42,31 +42,31 @@ class Option {
     this.language = value.language ?? 'Japanese';
     this.colorCode = value.color_code ?? '#7F99CC';
     this.lineWidth = value.line_width ?? 3;
-    this.commandTextOn = value.command_text_on ?? true;
-    this.actionTextOn = value.action_text_on ?? true;
+    this.commandTextOn = value.command_text_on ?? false;
+    this.actionTextOn = value.action_text_on ?? false;
     this.trailOn = value.trail_on ?? true;
 
-    this.gestureCloseTab = value.gesture_close_tab ?? 'DR';
-    this.gestureNewTab = value.gesture_new_tab ?? 'D';
+    this.gestureNewTab = value.gesture_new_tab ?? '';
     this.gestureNewTabBackground = value.gesture_new_tab_background ?? '';
     this.gesturePinTab = value.gesture_pin_tab ?? '';
-    this.gestureReload = value.gesture_reload ?? 'DU';
+    this.gestureReload = value.gesture_reload ?? 'UD';
+    this.gestureReloadAll = value.gesture_reload_all ?? '';
     this.gestureForward = value.gesture_forward ?? 'R';
     this.gestureBack = value.gesture_back ?? 'L';
-    this.gestureScrollTop = value.gesture_scroll_top ?? '';
-    this.gestureScrollBottom = value.gesture_scroll_bottom ?? '';
+    this.gestureScrollTop = value.gesture_scroll_top ?? 'RU';
+    this.gestureScrollBottom = value.gesture_scroll_bottom ?? 'RD';
+    this.gestureNextTab = value.gesture_next_tab ?? 'DR';
+    this.gesturePrevTab = value.gesture_prev_tab ?? 'DL';
     this.gestureLastTab = value.gesture_last_tab ?? '';
-    this.gestureReloadAll = value.gesture_reload_all ?? '';
-    this.gestureNextTab = value.gesture_next_tab ?? '';
-    this.gesturePrevTab = value.gesture_prev_tab ?? '';
-    this.gestureCloseRightTabWithoutPinned = value.gesture_close_right_tab_without_pinned ?? '';
-    this.gestureCloseRightTab = value.gesture_close_right_tab ?? '';
+    this.gestureCloseTab = value.gesture_close_tab ?? 'DU';
     this.gestureCloseLeftTabWithoutPinned = value.gesture_close_left_tab_without_pinned ?? '';
-    this.gestureCloseLeftTab = value.gesture_close_left_tab ?? '';
+    this.gestureCloseRightTabWithoutPinned = value.gesture_close_right_tab_without_pinned ?? '';
+    this.gestureCloseLeftTab = value.gesture_close_left_tab ?? 'LDL';
+    this.gestureCloseRightTab = value.gesture_close_right_tab ?? 'RDR';
     this.gestureCloseAllBackground = value.gesture_close_all_background ?? '';
     this.gestureCloseAll = value.gesture_close_all ?? '';
-    this.gestureOpenOption = value.gesture_open_option ?? 'RDLU';
-    this.gestureOpenExtension = value.gesture_open_extension ?? 'RDL';
+    this.gestureOpenOption = value.gesture_open_option ?? '';
+    this.gestureOpenExtension = value.gesture_open_extension ?? '';
   }
 
   /**
