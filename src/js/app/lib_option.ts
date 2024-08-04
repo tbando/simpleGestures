@@ -54,6 +54,8 @@ class LibOption {
       'gesture_reload_all',
       'gesture_next_tab',
       'gesture_prev_tab',
+      'gesture_move_current_tab_to_first',
+      'gesture_move_current_tab_to_last',
       'gesture_close_right_tab_without_pinned',
       'gesture_close_right_tab',
       'gesture_close_left_tab_without_pinned',

@@ -23,6 +23,8 @@ class Option {
   public readonly gesturePrevTab: string;
   public readonly gestureLastTab: string;
   public readonly gestureCloseTab: string;
+  public readonly gestureMoveCurrentTabToFirst: string;
+  public readonly gestureMoveCurrentTabToLast: string;
   public readonly gestureCloseLeftTabWithoutPinned: string;
   public readonly gestureCloseRightTabWithoutPinned: string;
   public readonly gestureCloseLeftTab: string;
@@ -59,6 +61,8 @@ class Option {
     this.gesturePrevTab = value.gesture_prev_tab ?? 'DL';
     this.gestureLastTab = value.gesture_last_tab ?? '';
     this.gestureCloseTab = value.gesture_close_tab ?? 'DU';
+    this.gestureMoveCurrentTabToFirst = value.gesture_move_current_tab_to_first ?? 'LUL';
+    this.gestureMoveCurrentTabToLast = value.gesture_move_current_tab_to_last ?? 'RUR';
     this.gestureCloseLeftTabWithoutPinned = value.gesture_close_left_tab_without_pinned ?? '';
     this.gestureCloseRightTabWithoutPinned = value.gesture_close_right_tab_without_pinned ?? '';
     this.gestureCloseLeftTab = value.gesture_close_left_tab ?? 'LDL';
@@ -89,6 +93,8 @@ class Option {
       gesture_close_tab: this.gestureCloseTab,
       gesture_forward: this.gestureForward,
       gesture_last_tab: this.gestureLastTab,
+      gesture_move_current_tab_to_first: this.gestureMoveCurrentTabToFirst,
+      gesture_move_current_tab_to_last: this.gestureMoveCurrentTabToLast,
       gesture_new_tab: this.gestureNewTab,
       gesture_new_tab_background: this.gestureNewTabBackground,
       gesture_next_tab: this.gestureNextTab,

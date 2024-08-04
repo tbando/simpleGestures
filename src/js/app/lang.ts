@@ -50,6 +50,14 @@ const lang: LanguageConfig = {
       'English': 'tab close',
       'Japanese': 'タブを閉じる',
     },
+    'gesture_move_current_tab_to_first': {
+      'English': 'Move current tab to the first position',
+      'Japanese': '今のタブを先頭に移動する',
+    },
+    'gesture_move_current_tab_to_last': {
+      'English': 'Move current tab to the last position',
+      'Japanese': '今のタブを最後に移動する',
+    },
     'gesture_forward': {
       'English': 'forward',
       'Japanese': '進む',
