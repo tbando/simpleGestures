@@ -40,7 +40,7 @@ class Option {
   constructor(value) {
     this.enabled = value.enabled ?? true;
     this.language = value.language ?? 'Japanese';
-    this.colorCode = value.color_code ?? '#FF0000';
+    this.colorCode = value.color_code ?? '#7F99CC';
     this.lineWidth = value.line_width ?? 3;
     this.commandTextOn = value.command_text_on ?? true;
     this.actionTextOn = value.action_text_on ?? true;
